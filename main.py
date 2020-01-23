@@ -10,10 +10,10 @@ class MyApp(App):
         fl = FloatLayout(size = (300, 300))
         fl.add_widget(Button(
         text = "this is my button",
+        on_press = self.btn_press,
         background_color = [1, 0, 0, 1],
         size_hint = (.5, .25)));
-
-    return fl
+        return fl
 
     def btn_press(self, instance):
         print('button pressed')
